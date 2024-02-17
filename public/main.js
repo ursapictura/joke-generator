@@ -27,7 +27,6 @@ const init = () => {
         getJoke().then((response) => {
           showJoke(response);
           showPunchline(response);
-          console.warn(getJoke());
           document.querySelector('#punchline').style.display = 'none';
         });
       }
